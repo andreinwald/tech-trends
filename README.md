@@ -7,6 +7,7 @@
 - most starred repos
 - Articles by tech words?
 
-
+# links
 
 - What sites are similar to Hacker News? https://news.ycombinator.com/item?id=40478422
+- https://github.com/cheeaun/awesome-hacker-news
