@@ -19,9 +19,22 @@ async function run() {
 
 function processMeta(document: HTMLElement) {
     let metas = document.querySelectorAll('meta');
+    let result: { [key: string]: string } = {};
+
     metas.forEach((tag) => {
-        console.log(tag.attributes);
+        let key: string | false = false;
+        if (tag.attributes['property']) {
+            key = tag.attributes['property'];
+        }
+        if (tag.attributes['name']) {
+            key = tag.attributes['name'];
+        }
+        if (key === false) {
+            return;
+        }
+        result[key] = tag.attributes['content'];
     });
+    console.log(result);
 }
 
 run();
