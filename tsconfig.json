@@ -1,0 +1,5 @@
+{
+  "target": "esnext",
+  "moduleResolution": "nodenext",
+  "lib": ["esnext"]
+}

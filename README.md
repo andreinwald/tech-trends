@@ -1,4 +1,8 @@
 # tech-trends
+```shell
+node --import=tsx src/fetch.ts 
+```
+
 
 - Hackernews (analyse domains in links)
 - IT Reddits
